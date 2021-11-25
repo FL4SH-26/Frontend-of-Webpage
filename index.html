@@ -1,0 +1,54 @@
+<html>
+<head>
+    <title>Portfolio WebSite</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head> 
+<body>
+    <div class="flash">
+        <nav>
+            <img src="Images/sb2.png" class="logo">
+            <ul>
+                <ul>
+                    <li><a href="">HOME</a></li>
+                    <li><a href="">ABOUT</a></li>
+                    <li><a href="">PORTFOLIO</a></li>
+                    <li><a href="">SERVICES</a></li>
+                    <li><a href="">HIRE ME</a></li>
+                </ul>
+                <img src="images/moon.png" id="icon">
+            </ul>
+        </nav>
+        
+        <div class="info">
+            <h1>I'm <span>Shubham</span> Singh</h1>
+            <p>This is official portfolio website to showcase my<br>all work related information and resume.</p>
+            <a href="">Download CV</a>
+        </div>
+         <div class="img-box">
+            <img src="images/box.png" class="back-img">
+            <img src="images/guy.png" class="main-img">
+        </div>
+    </div>
+    
+<script>    
+    
+    var icon = document.getElementById("icon"); 
+    
+    icon.onclick = function(){
+        document.body.classList.toggle("dark-theme");
+        if(document.body.classList.contains("dark-theme")){
+            icon.src = "images/sun.png";
+        }else{
+             icon.src = "images/moon.png";
+        }
+    }
+    
+</script>
+    
+    
+    
+    
+</body>
+</html>
+                                
